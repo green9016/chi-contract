@@ -1,0 +1,39 @@
+{
+  "name": "snx-liquidator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Penghui Liao <liaoishere@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "seth-searcher": "ts-node ./searcher/susdSearcher.ts",
+    "susd-searcher": "ts-node ./searcher/sethSearcher.ts",
+    "mempool-searcher": "ts-node ./searcher/mempoolSearcher.ts",
+    "flashbots-user-stat": "ts-node ./searcher/flashbotsUserStat.ts"
+  },
+  "dependencies": {
+    "@uniswap/v3-core": "^1.0.0",
+    "@uniswap/v3-periphery": "^1.1.0"
+  },
+  "devDependencies": {
+    "@flashbots/ethers-provider-bundle": "^0.3.2",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@typechain/ethers-v5": "^7.0.1",
+    "@typechain/hardhat": "^2.1.0",
+    "@types/chai": "^4.2.19",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^15.12.4",
+    "@types/ws": "^7.4.5",
+    "bnc-sdk": "^3.4.0",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.3.1",
+    "hardhat": "^2.4.1",
+    "prettier": "^2.3.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.13",
+    "ts-node": "^10.0.0",
+    "typechain": "^5.1.0",
+    "typescript": "^4.3.4",
+    "ws": "^7.5.0"
+  }
+}
